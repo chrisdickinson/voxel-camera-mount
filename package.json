@@ -1,0 +1,25 @@
+{
+  "name": "voxel-camera-mount",
+  "version": "0.0.0",
+  "description": "camera mount for voxeljs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chrisdickinson/voxel-camera-mount.git"
+  },
+  "keywords": [
+    "voxeljs",
+    "camera",
+    "mount"
+  ],
+  "author": "Chris Dickinson <chris@neversaw.us>",
+  "license": "MIT",
+  "gitHead": "e3d02f02f7d963ef17cb87ad5874077ec01beaf2",
+  "dependencies": {
+    "three": "0.X.X",
+    "inherits": "~1.0.0"
+  }
+}
