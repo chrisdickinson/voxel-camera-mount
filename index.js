@@ -4,18 +4,22 @@ var Stream = require('stream').Stream
 
 module.exports = Mount
 
-function Mount(camera) {
+function Mount(camera, offset) {
   if(!(this instanceof cons)) {
     return new cons(camera)
   }
 
   Stream.call(this)
   this.camera = camera
+  this.offset = new THREE.Object3D()
+  this.roll = new THREE.Object3D()
   this.pitch = new THREE.Object3D()
   this.yaw = new THREE.Object3D()
 
-  this.pitch.add(this.camera)
+  this.roll.add(this.camera)
+  this.pitch.add(this.roll)
   this.yaw.add(this.pitch)
+  this.offset.add(this.yaw)
 
   this.readable =
   this.writable = true
